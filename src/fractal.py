@@ -1,7 +1,8 @@
-import numpy as np
 import itertools
+import numpy as np
 
 def mandelbrot(xo: float|int = 2.47/2, yo: float|int = 0, res: int = 200, maxiter: int = 1000, zoom: int|float = 1) -> np.ndarray:
+    """Return an array representation of the mandelbrot set fractal."""
     xrange = 2.47 / zoom
     yrange = 2.24 / zoom
     xmin = xo - xrange/2
